@@ -1,0 +1,282 @@
+@charset "UTF-8";
+html{
+	margin: 0;
+	padding: 0;
+} 
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#E9E9EA;
+}
+table{
+	margin: 15px;
+	font-size:12px;
+	background-color: #DADADF;
+	padding:2px;
+}
+#Contenido{
+	font-family:Verdana, Geneva, sans-serif;
+	width:990px;
+	margin:0px auto;
+	background:url(imagen/fondo_1px.png);
+}
+#Cabecera{
+	background:url(imagen/header2010-950.jpg) no-repeat;
+	height:200px;
+	margin:0px auto;
+	width:950px;
+}
+#Cuerpo{
+	margin:0px auto;
+	padding:5px 0;
+	width:950px;
+	background-color:#efefef;
+	font-size:12px;
+}
+#Centro{
+width: 900px;
+padding:5px;
+margin:0px auto;
+font-size:12px;
+}
+#Centro a{
+	text-decoration:none;
+	color: #003300;
+}
+#Centro a:hover{
+	text-decoration:underline;
+}
+#Resultados{
+font-size:12px;
+width: 940px;
+background-color:#DEDEDE;
+margin:0px auto;
+border: 1px solid #555555;
+border-top:none;
+
+}
+#tescuela{
+	width:750px;
+	float:left;
+}
+#director{
+	color: #333333;
+	background-color: #CCCCCC;
+	font-size:13px;
+	width:700px;
+	padding:10px;
+	margin:20px;
+}
+h1{	font-size: 135%;}
+h2{	font-size: 80%; }
+h3{ margin-left:20px; }
+h4{ font-size: 140%; 
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+color: #123456;
+margin:auto;
+
+}
+#inicio{
+	background-color: #dddddd;
+	color:#003355;
+	font-size:14px;
+	width:600px;
+	border: 5px solid #aaaaaa;
+	padding: 10px;
+	margin:0px auto;
+}
+
+#ContenedorMenuNavegacion{
+	margin:0px auto;
+	width:950px;
+}
+#ContenedorMenuNavegacion a{
+	color:#444;
+	}
+#MenuUbicacion{
+	background-color:#CCC;
+	margin:0px;
+	padding:0 0 0 5px;
+	height:16px;
+	font-size:10px;
+	list-style: none;
+}
+#MenuUbicacion li{
+	font-size:11px;
+	margin-left:5px;
+	float:right;
+	display:inline-block;
+	height:16px;
+	color:#444;
+}
+/***************************************************/
+/* Root = Horizontal, Secondary = Vertical */
+ul#MenuNavegacion {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: 950px; /*For KHTML*/
+  list-style: none;
+  height: 24px;
+  position:relative;
+  
+ }
+
+ul#MenuNavegacion li {
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+	float: left; /*For Gecko*/
+	display: inline;
+	list-style: none;
+	position: relative;
+	height: 24px;
+	background-color:#e9e9ea; /* agregu? este color para que rellene el menu con color vino*/
+	width: 110px;
+	font-size:12px;
+	z-index:1; /*Agregu? regla para que el men? se presente sobre cualquier elemento del contenido*/
+}
+
+ul#MenuNavegacion ul {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: 250px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 0;
+}
+
+ul#MenuNavegacion ul:after /*From IE 7 lack of compliance*/{
+  clear: both;
+  display: block;
+  font: 1px/0px serif;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}
+
+ul#MenuNavegacion ul li {
+  width: 150px; /* Tama?o de la celdas del submenu*/
+  float: left; /*For IE 7 lack of compliance*/
+  display: block !important;
+  display: inline; /*For IE*/
+}
+
+/* Root Menu */
+ul#MenuNavegacion a {
+  border: 1px solid #e9e9ea;
+  border-right-color: #e9e9ea;
+  border-bottom-color: #e9e9ea;
+  padding: 0 15px;
+  float: none !important; /*For Opera*/
+  float: left; /*For IE*/
+  display: block;
+  background: #e9e9ea; /*  fondo de celda nivel superior*/
+  color: #6d6e71 ; /*  Color de letra  - celda nivel superior*/
+  font: normal 11px/22px Verdana, Helvetica, sans-serif;
+  text-decoration: none;
+  height: auto !important;
+  height: 1%; /*For IE*/
+
+}
+
+/* Root Menu Hover Persistence */  /* Color de celda y texto en rollover menu Superior*/
+ul#MenuNavegacion a:hover,
+ul#MenuNavegacion li:hover a,
+ul#MenuNavegacion li.iehover a {
+  background: #929497;
+  color: #FFFFFF;
+}
+
+/* 2nd Menu */
+ul#MenuNavegacion li:hover li a,
+ul#MenuNavegacion li.iehover li a {
+  float: none;
+  background: #929497;
+  color: #FFFFFF;
+}
+
+/* 2nd Menu Hover Persistence */
+ul#MenuNavegacion li:hover li a:hover,
+ul#MenuNavegacion li:hover li:hover a,
+ul#MenuNavegacion li.iehover li a:hover,
+ul#MenuNavegacion li.iehover li.iehover a {
+  background: #929497;
+  color: #e9e9ea;
+}
+
+/* 3rd Menu */
+ul#MenuNavegacion li:hover li:hover li a,
+ul#MenuNavegacion li.iehover li.iehover li a {
+  background: #EEE;
+  color: #666;
+}
+
+/* 3rd Menu Hover Persistence */
+ul#MenuNavegacion li:hover li:hover li a:hover,
+ul#MenuNavegacion li:hover li:hover li:hover a,
+ul#MenuNavegacion li.iehover li.iehover li a:hover,
+ul#MenuNavegacion li.iehover li.iehover li.iehover a {
+  background: #CCC;
+  color: #FFF;
+}
+
+/* 4th Menu */
+ul#MenuNavegacion li:hover li:hover li:hover li a,
+ul#MenuNavegacion li.iehover li.iehover li.iehover li a {
+  background: #EEE;
+  color: #666;
+}
+
+/* 4th Menu Hover */
+ul#MenuNavegacion li:hover li:hover li:hover li a:hover,
+ul#MenuNavegacion li.iehover li.iehover li.iehover li a:hover {
+  background: #CCC;
+  color: #FFF;
+}
+
+ul#MenuNavegacion ul ul,
+ul#MenuNavegacion ul ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 160px;
+}
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul#MenuNavegacion li:hover ul ul,
+ul#MenuNavegacion li:hover ul ul ul,
+ul#MenuNavegacion li.iehover ul ul,
+ul#MenuNavegacion li.iehover ul ul ul {
+  display: none;
+}
+
+ul#MenuNavegacion li:hover ul,
+ul#MenuNavegacion ul li:hover ul,
+ul#MenuNavegacion ul ul li:hover ul,
+ul#MenuNavegacion li.iehover ul,
+ul#MenuNavegacion ul li.iehover ul,
+ul#MenuNavegacion ul ul li.iehover ul {
+  display: block;
+}
+#Pie{
+	margin:0px auto;
+	width:948px;
+	background-color:#FFF;
+	font-size:9px;
+}
+
+#ContenedorPie{
+	margin:0px 0px auto auto;
+	width:650px;
+	height:100px;
+	padding:3px;
+	background:url(petclogo.png) no-repeat;
+}
+
+#ContenedorPie div{
+	margin:30px 0 0;	
+}

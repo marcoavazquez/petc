@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Insertar Id de Mobiliario</title>
+<script language="javascript">
+function abreviar(){
+var nomb = document.getElementById("mobiliario").value;
+var abrv = document.getElementById("idmobiliario");
+var ab=nomb.charAt(0).toUpperCase()+nomb.charAt(1);
+abrv.value=ab;
+var carnoad=["/","\"","\'","\\","%","&","*"];
+for(i=0;i<nomb.length;i++){
+	if(nomb.charAt(i)==' '){
+		abrv.value+=nomb.charAt(i+1).toUpperCase()+nomb.charAt(i+2);
+	}
+}
+
+}
+</script>
+</head>
+
+<body>
+<h1>Insertar mobiliario con su Id</h1>
+<form action="insidmob.php" method="post">
+	<table>
+		<tr>
+			<td bgcolor='#asdsas'>Mobiliario</td><td bgcolor='#eeddaa'><input type="text" name="mobiliario" size='100' id='mobiliario' onkeyup="abreviar()"/></td>
+		</tr>
+		<tr>
+			<td align='right'>Tipo:</td><td> 
+				<select name="tipo" > 
+					<option value="equipo">Equipo y materiales</option>
+					<option value="cocina">Enseres de cocina</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align='right'>Costo:</td><td>$<input type="text" name="costo" /></td>
+		</tr>
+		<tr>
+			<td align='right'>ID:</td><td bgcolor='#FFDDDD'><input type="text" name="idmob" id='idmobiliario' size='40'/><-- ¡No editar!</td>
+		</tr>
+		<tr>
+		 <td><input type="submit" value="Guardar" /></td><td></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

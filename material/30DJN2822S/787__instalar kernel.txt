@@ -1,0 +1,5 @@
+Com instalar kernel el linux mint o ubuntu
+
+1.- Instalar linux header...all.deb
+2.- instalar linux header ..1386.deb
+3.- instalar linux image ...i386.deb

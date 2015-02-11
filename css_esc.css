@@ -1,0 +1,105 @@
+#direccion{
+		padding-left:5px;
+		margin:5px;
+		font-size: 12px;
+		color: #223;
+	}
+	#conspersdiv{
+		background-color:#CCCCCC;
+		padding:10px;
+		margin:20px;
+		border:1px solid #666;
+	}
+	#conspersdiv a{
+		color:#030;
+		text-decoration:none;	
+	}
+	#conspersdiv a:hover{
+		color:#005500;
+		text-decoration:underline;
+	}
+	#conspersdiv a:active{
+		color:#006600;
+		text-decoration:underline;
+	}
+	#director{
+		width:890px;
+	}
+	#docentes{
+		background-color:#F0F0F0;
+		color:#333;
+		width:890px;
+		border: 1px solid #666;
+		padding:10px;
+		margin: 15px;
+	}
+	#espec{
+		color:#300;
+		background-color:#FFd;
+		border:1px solid #666;
+		width:750px;
+		padding:10px;
+		margin:15px;
+	}
+	#pesta{
+		height: 25px;
+		border:1px solid #555555;
+		border-bottom:none;
+		border-left:none;
+		border-right:none;
+	}
+	#pesta li{
+		color:#333;
+		display: inline;
+		list-style-type: none;
+		float: right;
+	}
+	
+	#pesta li:hover{
+		color:#555;
+		background-color: #DEDEDE;	
+		padding: 5px 9px 3px 11px;
+		
+	}
+	#pesta a:active{
+		color:#555;
+	}
+	.oculto { display: none; }
+	.visible { display: inline; }
+	.selecto{ 
+		background-color: #DEDEDE;
+		color:#00000;
+		padding: 4px 10px 4px 10px;
+		margin: 0 1px 0 1px;;
+		border-bottom:hidden;
+		border-left:hidden;
+		border-right:hidden;
+	}
+	.noselecto { 	
+	background-color: #bbb;
+	padding: 4px 10px 4px 10px;
+	margin: 0 0 0 0;
+	border: 1px solid #555555;
+	border-top:hidden; 
+}
+#tabla{
+	background-color:#FFF;
+}
+.vermas:hover{
+	background-color:#DADADA;
+}
+.vermas:active{
+	background-color:#CACACA;
+}
+.pasenc:hover{
+	background-color:#BFCABF;
+	color:#000;
+}
+#equipo a{
+	text-decoration:none;
+	color:#222;
+}
+#equipo a:hover{
+	text-decoration:underline;
+	color:#000;
+}

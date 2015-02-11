@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD/XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link href="sty.css" rel="stylesheet" type="text/css" />
+	<title>Formularios</title>
+	<link href='sev.png' rel='shortcut icon'/>
+</head>
+<body>
+<div id="Contenido">
+	<div id="Cabecera">
+		<div id="nometc" style="font-family:Verdana;font-size:10pt;position:absolute;top:110px;margin-left:610px;">
+					<h1>Escuelas de Tiempo Completo</h1>
+					<h2>Formularios!!!</h2>
+		</div>
+	</div>
+<div id="ContenedorMenuNavegacion">
+    	<ul id="MenuNavegacion">
+			<li>
+			<a href="index.html">MarcoAntonio</a>
+			</li>
+			<li><a href="index.html"><strong>Formularios</strong></a></i>
+		</ul>
+			<ul id="MenuUbicacion">
+			<li>
+			<ul>
+			<script language="javascript">
+
+				var fecha=new Date();
+				var diames=fecha.getDate();
+				var diasemana=fecha.getDay();
+				var mes=fecha.getMonth() +1 ;
+				var ano=fecha.getFullYear();
+
+				var textosemana = new Array (7);
+				  textosemana[0]="Domingo";
+				  textosemana[1]="Lunes";
+				  textosemana[2]="Martes";
+				  textosemana[3]="Miércoles";
+				  textosemana[4]="Jueves";
+				  textosemana[5]="Viernes";
+				  textosemana[6]="Sábado";
+
+				var textomes = new Array (12);
+				  textomes[1]="Enero";
+				  textomes[2]="Febrero";
+				  textomes[3]="Marzo";
+				  textomes[4]="Abril";
+				  textomes[5]="Mayo";
+				  textomes[6]="Junio";
+				  textomes[7]="Julio";
+				  textomes[7]="Agosto";
+				  textomes[9]="Septiembre";
+				  textomes[10]="Octubre";
+				  textomes[11]="Noviembre";
+				  textwwww				omes[12]="Diciembre";
+				document.write(textosemana[diasemana] + ", " + diames + " de " + textomes[mes] + " de " + ano);
+
+			</script>
+			</ul>
+			</li>
+            </ul>
+			
+	</div>
+	<div id="Cuerpo">
+		<div id="Cuadro">
+			<a href="escuelas.php">- Agregar escuelas</a><br /><br />
+			<a href="cantidad.php">- Agregar alumnos</a><br /><br />
+			<a href="personal.html">- Agregar Personal</a><br /><br />
+			<a href="mobiliario.html">- Agregar Mobiliario y Equipo de Computo y enseres de cocina</a>
+		</div>
+		*!! Modificar formulario de personal para agregar el CURP, llenar escuelas y alumnos y hacer el formularios para mobiliario y enseres de cocina<br />
+		Crear sesiones para usuarios administradores, investigar como codificar contraseñas y FIN
+	</div>
+	
+	<div id="Pie"><div id="ContenedorPie"><img src="PiePagina.png" align="right"; />
+ <div >Programa  Escuelas  de  Tiempo  Completo  Veracruz<br />
+	Subsecretaría de Educación Básica<br />
+	Secretaría de Educación &copy; 2010 - Todos los derechos reservados<br />
+	Tel +52(228) 841 7700 ext 7477 Km. 4.5 Carretera Federal Xalapa-Veracruz<br />
+Col SAHOP, C.P. 91190, Xalapa Veracruz, MÉXICO.</div></div>
+
+    </div>
+</div>
+</body>
+</html>
